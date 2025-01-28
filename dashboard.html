@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            padding:0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .nav{
+            background-color: gray;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .nav a{
+            text-decoration: none;
+            color: white;
+        }
+        .dashboard .main{
+            display: flex;
+            padding-top: 20px;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer-wrap{
+        height: 79.5vh;
+        display: grid;
+        align-items: end;
+        }
+        .footer{
+        background-color: gray;
+        height: 3rem;
+    text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="nav">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Dashboard</a>
+            <a href="">Logout</a>
+        </div>
+        <div class="main">
+            <h2>Selamat Datang di Company Profile Kami</h2>
+            <p>Ini adalah halaman utama perusahaan kami.</p>
+        </div>
+    </div>
+    <div class="footer-wrap">
+    <div class="footer">
+            <p>&copy;2025-Nexus</p>
+        </div>
+    </div>
+</body>
+</html>
