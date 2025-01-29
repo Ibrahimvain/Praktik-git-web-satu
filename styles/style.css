@@ -21,8 +21,9 @@
 
 }
 
-.register .register-wrap .register-top p {
+.register .register-wrap .register-top a {
     color: white;
+    text-decoration: none;
 }
 
 .register .register-wrap .register-top .register-top-wrap {
@@ -43,6 +44,7 @@
     display: flex;
     justify-content: center;
     gap: 0.3rem;
+    flex-wrap: wrap;
 }
 
 .register .register-wrap .register-buttom {
