@@ -1,84 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-   <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-      .house a {
-         text-decoration: none;
-         color: white;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-      .house {
-         display: flex;
-         justify-content: center;
-         gap: 50px;
-         background-color: gray;
-         height: 3rem;
+        header {
+            background-color: #333;
+            padding: 20px 20px;
+            color: white;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-      }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0px 15px;
+        }
 
-      h2 {
-         display: flex;
-         justify-content: center;
-         margin: 60px;
-      }
+        header nav a:hover {
+            text-decoration: underline;
+        }
 
-      .feature {
-         display: flex;
-         justify-content: center;
-      }
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+        }
 
-      .spc {
-         /* background-color: blue; */
-         display: grid;
-         align-items: end;
-         height: 70vh;
-        
-      }
+        .form-container {
+            text-align: center;
+        }
 
-      .login {
-         background-color: grey;
-         display: flex;
-         justify-content: center;
-         padding: 10px;
-      }
-      a {
-         text-decoration: none;
-         color: white;
-      }
-   </style>
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        form label {
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="text"], textarea {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            width: 60px;
+
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 10px;
+            font-size: 14px;
+        }
+    </style>
 </head>
-
 <body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
 
-   <div class="house">
-      <a href="">home</a>
-      <a href="">about</a>
-      <a href="">contact</a>
-      <a href="">register</a>
-      <a href="">login</a>
-   </div>
+    <div class="container">
+        <div class="form-container">
+            <h1>Login</h1>
+            <form>
+                <label>
+                    Username:
+                    <input type="text" name="nama">
+                </label>
+                <label>
+                    Passwoard:
+                    <input type="text" name="email">
+                </label>
+               
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
 
-   <h2>Login</h2>
-
-   <div class="feature">
-      <label for="username">username:</label>
-      <input type="text" name="email" id="email">
-      <label for="passwoard">Passwoard:</label>
-      <input type="passwoard" name="passwoard" id="passwoard">
-      <input type="submit" value="Login">
-   </div>
-
-   <div class="spc">
-      <div class="login">
-         <a href=""> &#xA9; 2025 - Nexus</a>
-      </div>
-   </div>
-
+    <footer>
+        &copy; 2025 - Nexus
+    </footer>
 </body>
-
 </html>
