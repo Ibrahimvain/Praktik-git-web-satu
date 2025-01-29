@@ -3,62 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Tentang Kami</title>
     <style>
-        body{
-            box-sizing: border-box;
-            padding:0;
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
             display: flex;
             flex-direction: column;
+            min-height: 100vh;
         }
-        .nav{
-            background-color: gray;
-            padding: 20px;
+        
+        header {
+            background-color: #333333;
+            color: white;
+            padding: 20px 20px;
             display: flex;
             justify-content: center;
-            gap: 15px;
-        }
-        .nav a{
-            text-decoration: none;
-            color: white;
-        }
-        .dashboard .main{
-            display: flex;
-            padding-top: 20px;
-            flex-direction: column;
             align-items: center;
         }
-        .footer-wrap{
-        height: 79.5vh;
-        display: grid;
-        align-items: end;
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
         }
-        .footer{
-        background-color: gray;
-        height: 3rem;
-    text-align: center;
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        footer {
+            background-color: #333333;
+            color: white;
+            text-align: center;
+            padding: 10px 10px;
+        }
+
+        h1 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
         }
     </style>
 </head>
 <body>
-    <div class="dashboard">
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="dashboard.html">Dashboard</a>
-            <a href="login.html">Logout</a>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>Selamat Datang di Company Profile Kami</h1>
+            <p>Ini adalah halaman utama perusahaan kami</p>
         </div>
-        <div class="main">
-            <h2>Selamat Datang di Company Profile Kami</h2>
-            <p>Ini adalah halaman utama perusahaan kami.</p>
-        </div>
-    </div>
-    <div class="footer-wrap">
-    <div class="footer">
-            <p>&copy;2025-Nexus</p>
-        </div>
-    </div>
+    </main>
+    <footer>
+        &copy; 2025 - Nexus
+    </footer>
 </body>
 </html>
